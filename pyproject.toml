@@ -1,0 +1,35 @@
+[project]
+name = "ml-foundations"
+version = "0.1.0"
+description = "Phase 4 ML learning project"
+authors = [
+    {name = "Dhara Shah",email = "dharadshah@gmail.com"}
+]
+requires-python = "^3.13"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "notebook (>=7.5.6,<8.0.0)",
+    "ipykernel (>=7.2.0,<8.0.0)",
+    "numpy (>=2.4.4,<3.0.0)",
+    "pandas (>=3.0.2,<4.0.0)",
+    "matplotlib (>=3.10.9,<4.0.0)",
+    "seaborn (>=0.13.2,<0.14.0)",
+    "scikit-learn (>=1.8.0,<2.0.0)",
+    "xgboost (>=3.2.0,<4.0.0)",
+    "lightgbm (>=4.6.0,<5.0.0)",
+    "catboost (>=1.2.10,<2.0.0)",
+    "optuna (>=4.8.0,<5.0.0)",
+    "shap (>=0.51.0,<0.52.0)",
+    "lime (>=0.2.0.1,<0.3.0.0)",
+    "umap-learn (>=0.5.12,<0.6.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "jupyterlab (>=4.5.7,<5.0.0)"
+]
